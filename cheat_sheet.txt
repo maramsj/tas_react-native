@@ -1,0 +1,42 @@
+Git hub basic commands
+
+download remote repository
+git clone "repo"
+1. Check existing branch
+git branch -a
+
+2. Create new branch
+git checkout -b <branch>
+
+3.Push branch to remote to github remote
+git push origin <branch> -u
+
+4.Check the file you 
+git status
+
+5.Adding global identity before commit
+git config --global user.emailused.run
+git config user.usernameused
+
+6.Adding file that we add (commit)
+git add -A
+
+7.adding message why we need to commit
+git commit -m "the purpose of commit"
+
+8. Push to remote stream
+git push origin feature/hjraugot
+
+9.pull my branch
+git pull origin feature branch
+
+10.Access diff. branch Get latest contents
+git checkout develop
+git pull origin develop
+
+11. access my branch again after pulling dev branch then merge
+git checkout feature/hjra
+git merge develop
+
+12. push latest my branch to develop branch
+git push origin feature/hjra
