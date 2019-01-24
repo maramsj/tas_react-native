@@ -1,0 +1,12 @@
+New Topic, create an MR/New Pull Request
+`Prepairing current branch for MR`
+Go to your feature branch then merge `develop` into your feature run this steps
+1. run `git branch -a` check if you are on feature branch. You will see asterisk is pointing your branch
+2. verify if your current branch is updated, run this `git pull origin <your branch name>`. see `already up to date.`
+3. get the latest develop. run `git checkout develop`, `git pull origin develop`
+4. merge your existing branch. run `git checkout <feature branch>`, `git merge develop`
+5. if has merge conflicts modify each file in text editor, to check each files run, `git status` see the red one highlighted
+6. if done merging with no conflicts, lets push. run `git push origin <feature branch`
+7. Go to the remote link https://github.com/mechazod/tas_react-native/ and go to your branch then click New Pull Request
+8. Assign now to the reviewer `(assignee)` and add some message. Always `base` to develop branch not master unless you know what you are doing.
+9. Once the reviewer passed test it will now go to develop branch as latest commit
