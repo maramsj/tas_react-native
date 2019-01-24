@@ -1,0 +1,24 @@
+Today’s Target - Jan 24, 2019 8am-9am:
+- user will have client to use git commands
+- user can download remote repository
+- user can make a simple commit
+If you have now the terminal client do the following
+1. Go inside the desktop, run `cd ~/Desktop`
+2. Make a workspace directory for `opensource` folder run `mkdir opensource` and `cd opensource`
+3. Download the remote repository. run `git clone https://github.com/mechazod/tas_react-native.git`
+
+Windows Client
+https://gitforwindows.org/
+
+Instruction 2 - user can make a simple commit
+1. Go to `opensource/tas_react-native`
+2. Know what is the current or existing branch, run `git branch -a` (listing all branches available) those red are remote, those are not is within your machine, with asterisk is your current branch
+3. We will now create your own branch, run `git checkout -b feature/<your name>` ex. feature/mar
+4. We push it to remote so it will appear in github remote, run `git push origin feature/<your name> -u`, then now check https://github.com/mechazod/tas_react-native` and see if your branch exist
+5. Lets try now add some file like a text file to the existing branch. put any file
+6. Now lets see if appear the file you add, run `git status`
+7. We will now create a commit, but before that. add your global identity. run `git config --global user.email "email add you use".  run` git config --global user.name “username you used”`
+8. Now your computer has identified the commiter, we will now use the commit. run `git add -A` adding file that we add.
+9. Lets create some message for what is need to commit. `git commit -m "Your message why your are adding that file or purpose of it"`
+10. Lastly we push to remote stream, run `git push origin feature/<your name>`. Now check on https://github.com/mechazod/tas_react-native
+
